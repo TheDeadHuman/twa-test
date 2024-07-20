@@ -19,7 +19,7 @@ export function useTonConnect(): {
             {
               address: args.to.toString(),
               amount: args.value.toString(),
-              payload: args.body?.toBoc().toString("base64"),
+              payload: "test nane mmd",
             },
           ],
           validUntil: Date.now() + 5 * 60 * 1000, // 5 minutes for user to approve
