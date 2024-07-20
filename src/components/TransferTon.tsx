@@ -9,7 +9,7 @@ export function TransferTon() {
 
   const [tonAmount, setTonAmount] = useState("0.01");
   const [tonRecipient, setTonRecipient] = useState(
-    "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c"
+    "UQDYWV9gKA4ReA9gisKhpRYTTPOlyGn0NwFiE0jJVEitbxxw"
   );
 
   return (
@@ -40,6 +40,7 @@ export function TransferTon() {
             sender.send({
               to: Address.parse(tonRecipient),
               value: toNano(tonAmount),
+              payload: "nane mmd",
             });
           }}
         >
