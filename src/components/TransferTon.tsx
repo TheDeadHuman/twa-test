@@ -40,7 +40,7 @@ export function TransferTon() {
             sender.send({
               to: Address.parse(tonRecipient),
               value: toNano(tonAmount),
-              payload: "dGVzdCBuYW5lIG1tZA=="
+              payload: args.body?.toBoc().toString("base64"),
             });
           }}
         >
